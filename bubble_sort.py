@@ -21,7 +21,7 @@ if __name__=="__main__":
 	print("BUBBLE SORT".center(columns))
 	
 	while True:
-		array = input("Please type in numbers separated by commas: ").split(",")
+		array = input("\nPlease type in numbers separated by commas: ").split(",")
 		array = [int(x) for x in array]
 		n = len(array)
 
