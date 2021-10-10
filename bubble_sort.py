@@ -19,8 +19,18 @@ def BubbleSort():
 
 if __name__=="__main__":
 	print("BUBBLE SORT".center(columns))
-	array = input("Please type in numbers separated by commas: ").split(",")
-	array = [int(x) for x in array]
-	n = len(array)
+	
+	while True:
+		array = input("Please type in numbers separated by commas: ").split(",")
+		array = [int(x) for x in array]
+		n = len(array)
 
-	print(BubbleSort())
+		print(BubbleSort())
+
+		ask = input("\nWanna Continue? [y/n]: ").lower()
+		if ask == "y":
+			continue
+		elif ask == "n":
+			exit()
+
+	
